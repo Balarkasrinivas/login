@@ -1,0 +1,18 @@
+      <br>
+      <div class="container" id="lgBox">
+        <form class="form-group" #lgForm="ngForm" >
+          <div class="loginRow"><h4 class="text-center">Login Form</h4></div>
+          <br><br>
+          <div class="loginRow">
+            <input type="email" #useremail name="useremail" ngModel class="form-control" placeholder="UserEmail" required >
+          </div>
+          <br>
+          <div class="loginRow">
+            <input type="password" #password name="password" ngModel class="form-control" placeholder="Password" required  />
+          </div>
+          <br>
+          <div class="loginRow"
+          ><button type="button" class="btn btn-primary" (click) = "loginUser(lgForm.value)">Login</button>
+        </div>
+        </form>
+        </div>
